@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 29</title>
+    </head>
+    <body>
+        <form>
+            Name: <input type="text" name="" id="n"/>
+            <button onclick="odd_even();" >Click</button>
+        </form>
+
+        <form>
+            Number: <input type="text" name="" id="n2"/>
+            <button onclick="positive_negative();" >Click</button>
+        </form>
+        
+        <form>
+            New: <input type="text" name="" id="n3"/>
+            <button onclick="Now();" >Click</button>
+        </form>
+        
+        <script type="text/javascript">
+         function odd_even(){
+             if(document.getElementById("n").value%2 == 0 ){
+                 alert ("The number is even")
+             }
+             else(
+                 alert("The number is odd")
+             )
+         }
+         function positive_negative(){
+             if(document.getElementById("n2").value>0 ){
+                 alert ("The number is positive ")
+             } else if (document.getElementById("n2").value == 0) {
+                 alert ("The number is 0")
+             } else {
+                 alert ("The number is negative")
+             }
+             
+             
+         }
+         function Now(){
+             var a=document.getElementById("n3").value;
+            // var today = new Date();
+
+             switch (a){
+                 case "0":alert("Sunday");
+                 break;
+                 case "1":alert("Monday");
+                 break;
+                 case "2":alert("Tuesday");
+                 break;
+                 case "3":alert("Wednesday");
+                 break;
+                 case "4":alert("Thursday");
+                 break;
+                 case "5":alert("Friday");
+                 break;
+                 case "6":alert("Saturday");
+                 break;
+
+                 default:alert("You have entered an incorrect number.")
+             }
+         }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>Class 24</title>
+       <style>
+           #id1{
+               color: blue;
+           }
+       </style>
+   </head>
+   <body>
+<button onclick="click_me();">Click Me</button>
+<button onclick="answer_me();" >Click me next</button>
+<button onclick="Click_me_next();" >Next Button</button>
+<button onclick="Click_me4();" >Next Next Button</button>
+<button onclick="Click_me5();" >Next Next Next Button</button>
+<button onclick="Click_me6();" >Next Next Next Next Button</button>
+<div id="id1"></div>
+<script type="text/javascript">
+    function click_me(){
+        alert ("How are you?");
+    }
+    function answer_me(){
+        alert ("I am fine.");
+    }
+    function Click_me_next(){
+        document.getElementById("id1").innerHTML="Look at this.";
+    }
+    function Click_me4(){
+        var a=987789;
+        alert ("My pin is-"+a);
+    }
+    function Click_me5(){
+        var a="UAE,Dubai";
+        alert ("My address is-"+a);
+    }
+    function Click_me6(){
+        var a="UAE,Dubai ";
+        var b="987890"
+      
+        alert ("My address is-"+a  +"My pin is-" +b  );
+       
+    }
+</script>
+   </body>
+</html>

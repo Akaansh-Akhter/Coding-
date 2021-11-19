@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<title>Homework 10</title>
+</head>
+<body>
+	<canvas height="1000px" width="1000px" id="canvas1"></canvas>
+    <script type="text/javascript">
+    var c=document.getElementById("canvas1");
+	var c1=c.getContext("2d");
+    c1.beginPath();
+    c1.arc(300,100,75,0,2*Math.PI);
+    c1.stroke();
+    
+    c1=c.getContext("2d");
+		c1.moveTo(300,173);
+		c1.lineTo(200,300);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(200,300);
+		c1.lineTo(400,300);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(400,300);
+		c1.lineTo(300,173);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(200,300);
+		c1.lineTo(200,450);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(200,450);
+		c1.lineTo(400,450);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(400,450);
+		c1.lineTo(400,300);
+		c1.stroke();
+ </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Central Park Review</title>
+        <style>
+             h1{
+                font-family: 'Noto Serif', serif;
+                font-size: 45px;
+                background-color: black;
+                color: white;
+            }
+            #stick{
+                position: sticky;
+                top: 0;
+                text-align: center;
+            }
+            li{
+                display: inline;
+            }
+            a:link{
+                color: blanchedalmond; /*For unvisited link*/
+            }
+            a:visited{
+                color: white; /*For visited link*/
+            }
+            ::selection{
+                background-color: blanchedalmond;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body style="background-color: royalblue;">
+        <h1 id="stick">Central Park Review</h1>
+        <nav style="background-color: black; padding: 10px;text-align: center;">
+            <li><a href="Homework18.html" target="_blank">Home</a> |</li>
+              <li><a href="Homework18_Gallery.html" target="_blank">Gallery</a> |</li>
+              <li><a href="Homework18_Videos.html" target="_blank">Videos</a> |</li>
+              <li><a href="Homework18_Map.html" target="_blank">Map</a> |</li>
+              <li><a href="Homework18_form.html" target="_blank">Form</a> |</li>
+    
+          </nav><br>
+            <form>
+                <fieldset style="width: fit-content; background-color: seashell;">
+                    <label>Name:</label>   <input type="text" name="name" required="required" placeholder="Your Name" /> <br>
+                    <label>Number:</label> <input type="text" name="Phone_number" minlength="5" maxlength="10" placeholder="Your Phone Number"/> <br>
+                    <label>Email:</label>  <input type="email" name="Email" minlength="5" maxlength="50"><br>
+                    <label>Park Review:</label> <textarea placeholder="Your Review" required="required"></textarea><br>
+                    <input type="submit"value="Save"/>
+                </fieldset>
+            </form>
+    </body>
+</html>

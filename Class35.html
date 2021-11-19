@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 35</title>
+    </head>
+  
+    <body>
+       <form>
+        Number: <input type="text" name="" id="n1"/>
+        <button onclick="ages();" >Click</button>
+       </form> 
+       <form>
+        Enter your percentage: <input type="text" name="" id="n2"/>
+        <button onclick="marks();" >Click</button>
+       </form> 
+    <script type="text/javascript">
+    function ages(){
+        if(document.getElementById("n1").value>=1 && document.getElementById("n1").value<10){
+            alert("Kids")
+        }else {
+            if (document.getElementById("n1").value>=10 && document.getElementById("n1").value<18) {
+                alert("Juniors")
+            }else {
+                if (document.getElementById("n1").value>=18 && document.getElementById("n1").value<60) {
+                    alert("Adults")
+                } else {
+                    alert("Seniors")
+                }
+            }
+        }
+    }
+        function marks(){
+            if (document.getElementById("n2").value<60){
+                alert("You need to work much harder")
+            }
+            else if(document.getElementById("n2").value>=60 && document.getElementById("n2").value<80){
+                alert("Keep working for better results")
+            }
+            else if(document.getElementById("n2").value>=80 && document.getElementById("n2").value<100){
+                alert("Mantain your consistency")
+            }
+            else{
+                alert("You have entered an incorrect value")
+            }
+        }
+    
+    </script>
+    </body>
+</html>

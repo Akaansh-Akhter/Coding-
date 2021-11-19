@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Class 30</title>
+    </head>
+    <body>
+         <button onclick="numbers();">Click me</button>
+         <button onclick="numbers2();">Click me</button>
+        <div id="n1"></div>
+
+
+        <script type="text/javascript">
+        function numbers(){
+            var msg="";
+            for ( a=1; a<=10; a++){
+                msg += a
+            }
+            document.getElementById("n1").innerHTML = msg;
+        }
+        function numbers2(){
+          var a=prompt("Please enter first value");
+          var b=prompt("Please enter second value");
+          var msg="";
+          for ( c=a; c<=b; c++){
+           msg += c+" ";
+          }alert(msg)
+        }
+          
+
+          
+        
+        </script>
+    </body>
+</html>

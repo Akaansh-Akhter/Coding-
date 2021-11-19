@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 19</title>
+</head>
+<body>
+	<canvas height="1000px" width="1000px" id="canvas1"></canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById("canvas1");
+		var c1=c.getContext("2d");
+		c1.moveTo(100,100);
+		c1.lineTo(300,100);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(300,100);
+		c1.lineTo(300,300);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(300,300);
+		c1.lineTo(100,300);
+		c1.stroke();
+
+        c1=c.getContext("2d");
+		c1.moveTo(100,300);
+		c1.lineTo(100,100);
+		c1.stroke();
+
+        c1.beginPath();
+        c1.arc(100,600,75,20,2*Math.PI);
+        c1.stroke();
+
+        c1.font="20px Greek";
+        c1.fillText("Hi, I am Akaansh",
+         100,700);
+	</script>
+</body>
+</html>

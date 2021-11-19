@@ -1,0 +1,29 @@
+p{
+  font-size: 25px;color: darkmagenta; text-align: justify;
+}
+body{
+    /*background-color: cornsilk;*/
+    background: linear-gradient(to top,magenta, pink);
+    border: 1px solid black;
+    padding: 10px;
+    background-attachment: fixed; /*fix html background*/
+}
+h1{
+    font-size: 35px;color:deeppink; text-align: center;
+}
+h2{
+    font-size: 30px;color:darkviolet ;
+}
+#list{
+color: darkmagenta; font-size: 25px
+}
+div{
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+img{
+    border: 1px solid black;
+}

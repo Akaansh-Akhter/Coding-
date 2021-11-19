@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 26</title>
+    </head>
+    <body>
+        <button onclick="click_me();">Click Me</button>
+        <button onclick="fullname();">Click Me</button>
+        <script type="text/javascript">
+        emp = {
+            id: 1 ,
+            firstname: "Akaansh ",
+            lastname: " Akhter",
+            age: 13 ,
+            place: "Malaysia ",
+            fullname: function(){
+                return this.firstname + " " + this.
+                lastname;
+            }
+        }
+        function click_me(){
+            alert("The ID is:\n "+emp.id +"\n The name is:"+emp.firstname +"The last name is" +emp.lastname   +"\n The full name is:" +emp.fullname() +"\n The age is:" +emp.age +"\n The place is:"+emp.place);
+        }
+     
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Class 36</title>
+    </head>
+    <body>
+        <form>
+            <fieldset style="width: fit-content;">
+            Username: <input type="text" id="n3" name="name" minlength="5" maxlength="100" placeholder="Enter your username"/><br>
+            Password: <input type="password" id="n2" name="Password" required="required" minlength="1" maxlength="15" placeholder="Enter your password here"/><br>
+            Confirm Password: <input type="password" id="n1" name="Password2" required="required" minlength="1" maxlength="15" placeholder="Enter your password here"/><br>
+            Email: <input type="email" id="n4" name="Email" minlength="10" maxlength="100" placeholder="Enter your email"/><br>
+            Gender: <input type="radio" id="n5" name="Gender" onchange="Gender();" value="Male" />Male
+                    <input type="radio" id="n6" name="Gender" value="Female" onchange="Gender();"/> Female
+                    <input type="radio"  id="n7" name="Gender" value="Other" name="Gender" onchange="Gender();"/>Other
+                       <center><button onclick="Password2();">Save</button></center>
+            </fieldset>
+        </form>
+        <script type="text/javascript">
+            function Password2(){
+                if (document.getElementById("n3").value=="") {
+                    alert("Please fill in your username")
+                } else
+                if (document.getElementById("n2").value==document.getElementById("n1").value) {
+                    alert("You have logged in successfully")
+                } else {
+                    alert("Both passwords must be the same")
+                }
+            }
+            function Gender(){
+                //alert("hello");
+                if(document.getElementById("n5").checked){
+                    alert("You have selected Male")
+                }
+                else if(document.getElementById("n6").checked){
+                    alert("You have selected Female")
+                }
+                else{
+                    alert("You have selected Other")
+                }
+            }
+           
+        </script>
+    </body>
+</html>

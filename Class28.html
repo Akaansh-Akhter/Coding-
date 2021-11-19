@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 28</title>
+    </head>
+    <body>
+        <button onclick="check_greater();">Click Me</button>
+        <button onclick="check_vote();">Click Me 2</button>
+        <button onclick="check_value();">Click Me 3</button>
+        <script type="text/javascript">
+          function check_greater(){
+              var a=30, b=30;
+              if (a>b) {
+                  alert("The greater number is: "+a)
+              } else if(a==b) {
+                alert("The numbers are equal: "+a)
+              }
+              else{
+                  alert("The greater number is: "+b)
+              }
+          }
+          function check_vote(){
+                  var age=prompt("What is your age?" );
+                  if (age>=18) {
+                      alert("You are eligible to vote");
+                  } else {
+                    alert("You are not eligible to vote");
+                  }
+          }
+          function check_value(){
+                  var no1=prompt("Please enter your first number" );
+                  var no2=prompt("Please enter your second number" );
+                  if (no1>no2) {
+                      alert("The smaller number is "+no2);
+                  } else {
+                    alert("The smaller number is "+no1);
+                  }
+                }
+        </script>
+    </body>
+</html>

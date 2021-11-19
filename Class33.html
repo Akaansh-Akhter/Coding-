@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 33</title>
+    <style type="text/css">
+    div{
+        height: 50px;
+         width: 70px;
+        background-color: aqua;
+        animation-name: divmove;
+        animation-duration: 5s;
+       animation-iteration-count: infinite;
+       position: relative;
+    }
+
+    #no1{animation-timing-function: linear;}
+    #no2{animation-timing-function: ease;}
+    #no3{animation-timing-function: ease-in;}
+    #no4{animation-timing-function: ease-out;}
+    #no5{animation-timing-function: ease-in-out;}
+    @keyframes divmove{
+        from {left: 0px;}
+        to {left: 400px}
+    }
+    </style>
+    </head>
+    <body>
+        <h1>Speed of Movement</h1>
+        <div id="no1"></div>
+        <div id="no2"></div>
+        <div id="no3"></div>
+        <div id="no4"></div>
+        <div id="no5"></div>
+
+        <form>
+            Name: <input type="text" name="" id="no6"/>
+            <button onclick="five();" >Click</button>
+        </form>
+
+        <form>
+            Name: <input type="text" name="" id="no7"/>
+            <button onclick="divide();" >Click</button>
+        </form>
+
+        <script type="text/javascript">
+            function five(){
+
+                //alert(document.getElementById('no6').value);
+                if (document.getElementById("no6").value>5 && document.getElementById('no6').value<100){
+                    alert ("This number is incorrect")
+                }
+                
+                 else {
+                    alert("This number is correct")
+                }
+
+            }
+
+            function divide(){
+                if (document.getElementById("no7").value%5 ==0 ){
+                    alert ("This number is divisible by 5")
+                }
+                
+                 else {
+                    alert("This number is not divisible by 5")
+                }
+            }
+            
+            
+        </script>
+    </body>
+</html>

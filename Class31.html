@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 31</title>
+    </head>
+    <body>
+        <button onclick="rounding();">Rounding of decimal number</button>
+        <button onclick="round_up();">Round up</button>
+        <button onclick="round_down();">Round Down</button>
+        <button onclick="keep_integer();">Keep integer</button>
+        <button onclick="equation_sign();">Equation sign</button>
+        <button onclick="number_power();">Power of a number</button>
+        <button onclick="square_root();">Square root of a number</button>
+        <button onclick="absolute_positive();">Absolute positive number</button>
+        <button onclick="minimum();">Minimum</button>
+        <button onclick="maximum();">Maximum</button>
+        <button onclick="average();">Average</button>
+        
+
+        <script type="text/javascript">
+        function rounding(){
+            var a = prompt("Enter a decimal value");
+            alert(Math.round(a));
+        }
+        
+        function round_up(){
+            var a = prompt("Enter a number");
+            alert(Math.ceil(a));
+        }
+
+        function round_down(){
+            var a = prompt("Enter a number");
+            alert(Math.floor(a));
+        }
+
+        function keep_integer(){
+            var a = prompt("Enter a number");
+            alert(Math.trunc(a));
+        }
+
+        function equation_sign(){
+            var a = prompt("Enter a number");
+            alert(Math.sign(a));
+        }
+
+        function number_power(){
+            var a = prompt("Enter a number");
+            var b = prompt("Enter your power");
+            alert(Math.pow(a,b));
+        }
+
+        function square_root(){
+            var a = prompt("Enter a number");
+            alert(Math.sqrt(a));
+        }
+
+        function absolute_positive(){
+            var a = prompt("Enter a number");
+            alert(Math.abs(a));
+        }
+
+        function minimum(){
+            //var a = prompt("Enter a number");
+            alert(Math.min(10, 11, 50, 2, 61, 44));
+        }
+
+        function maximum(){
+            //var a = prompt("Enter a number");
+            alert(Math.max(10, 11, 50, 2, 61, 44));
+        }
+
+        function average(){
+            var a = prompt("Enter lower value");
+            var b = prompt("Enter higher value");
+            //var d=0;
+            //var msg=0;
+            for(var c=a; c<=b; c++){
+               alert(c);
+                //msg += c;
+            }//alert(msg);
+        }
+        </script>
+    </body>
+</html>

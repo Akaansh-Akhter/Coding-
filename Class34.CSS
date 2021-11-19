@@ -1,0 +1,25 @@
+h1{
+    font-size: 30px;
+    background-color:black;
+    margin: 10px;
+    font-family: 'Zen Old Mincho', serif;
+    text-align: center;
+    color: aliceblue;
+}
+img{
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 500px;
+    
+
+}
+p{
+    font-family: 'Zen Old Mincho', serif;
+    text-align: justify;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+body{
+    background-color:gray;
+}

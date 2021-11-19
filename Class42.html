@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 42</title>
+        <style>
+            h1::after{
+                content: ' -After h1';
+            }
+            li{
+                color: white;
+            }
+            #no1{
+                color: greenyellow;
+            }
+            #id1::marker{
+                color: saddlebrown;
+            }
+            ::selection{
+                background-color: yellow;
+                color: black;
+            }
+        </style>
+    </head>
+    <body style="background-color: royalblue;" >
+        <h1>Test</h1>
+        <p>This is a longer test</p>
+        <ol>
+            <li id="id1"><span id="no1">Football</span></li>
+            <li id="id1">Basketball</li>
+            <li>Swimming</li>
+        </ol>
+
+        <ul>
+            <li>Football</li>
+            <li>Basketball</li>
+            <li>Swimming</li>
+        </ul>
+    </body>
+</html>

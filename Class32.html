@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 32</title>
+        <style type="text/css">
+        #div1{
+            width: 200px;
+            height: 150px;
+            background-color: blue;
+            animation-name: colors;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #div2{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: forestgreen;
+            animation-name: circles;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        #div3{
+            width: 200px;
+            height: 200px;
+            background-color: mediumpurple;
+            animation-name: squares;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        #div4{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: rgb(46, 29, 201);
+            animation-name: moving_circles;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        #div5{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: rgb(46, 29, 201);
+            animation-name: moving_circles_color;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+             }
+
+        #id1{
+            height: 300px;
+            width: 300px;
+            animation-name: image;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-direction: alternate;
+        }
+
+        @keyframes colors{
+            from{background-color: blue;}
+            to{background-color: chartreuse;}
+        }
+
+        @keyframes circles{
+            0%{background-color: goldenrod;}
+            25%{background-color: indigo;}
+            50%{background-color: lightsteelblue;}
+            75%{background-color: maroon;}
+            100%{background-color: magenta;}
+        }
+
+        @keyframes squares{
+            0%{background-color: rgb(32, 218, 203);}
+            25%{background-color: rgb(128, 130, 0);}
+            50%{background-color: rgb(222, 176, 222);}
+            75%{background-color: rgb(247, 7, 7);}
+            100%{background-color: rgb(255, 217, 0);}
+        }
+
+        @keyframes moving_circles{
+            0%{left: 0px; top: 0px;}
+            25%{left: 200px; top: 0px;}
+            50%{left: 200px; top: 200px;}
+            75%{left: 0px; top: 200px}
+            100%{left: 0px; top: 0px;}
+        }
+        @keyframes moving_circles_color{
+            0%{left: 0px; top: 0px; background-color: mediumseagreen;}
+            25%{left: 200px; top: 0px; background-color: mediumslateblue;}
+            50%{left: 200px; top: 200px; background-color: mediumturquoise;}
+            75%{left: 0px; top: 200px; background-color: midnightblue;}
+            100%{left: 0px; top: 0px; background-color: orange;}
+        }  
+        @keyframes image{
+            0%{left: 0px; top: 0px;}
+            25%{left: 200px; top: 0px;}
+            50%{left: 200px; top: 200px;}
+            75%{left: 0px; top: 200px}
+            100%{left: 0px; top: 0px;}
+        }
+        #div1{animation-timing-function: linear;}
+        #div2{animation-timing-function: ease;}
+        #div3{animation-timing-function: ease-in;}
+        #div4{animation-timing-function: ease-out;}
+        #div5{animation-timing-function: ease-in-out;}
+
+        @keyframes divmove{
+            from{left: 0px;}
+            to{left: 300px}
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Animation</h1>
+        <div id="div1"></div>
+
+        <h1>Circle Percentages</h1>
+        <div id="div2"></div>
+
+        <h1>Square multicolored</h1>
+        <div id="div3"></div>
+
+        <h1>Moving Circle</h1>
+        <div id="div4"></div>
+
+        <h1>Moving Circle changing color</h1>
+        <div id="div5"></div>
+
+        <img id="id1" src="https://th.bing.com/th/id/OIP.W8apTKARTqVhmLzMCisNmAHaEs?w=260&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+
+        <h1>Speed Animation</h1>
+        <div id="div1" style="height: 50px; width: 50px; animation-name: divmove; background-color: orchid;" ></div>
+        <div id="div2" style="height: 50px; width: 50px; animation-name: divmove; background-color: orchid;"></div>
+        <div id="div3" style="height: 50px; width: 50px; animation-name: divmove; background-color: orchid;"></div>
+        <div id="div4" style="height: 50px; width: 50px; animation-name: divmove; background-color: orchid;"></div>
+        <div id="div5" style="height: 50px; width: 50px; animation-name: divmove; background-color: orchid;"></div>
+    </body>
+</html> 
