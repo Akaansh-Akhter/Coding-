@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Finder 🔍 </title>
+        
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&family=Praise&display=swap" rel="stylesheet">
+        <style>
+            h1{
+                font-size: 70px;
+                text-align: center;
+                
+                font-family: 'Praise', cursive;
+            }
+            #stick{
+                position: sticky;
+                top: 0;
+                color: white;
+                background-color: navy;
+            }
+            li{
+                display: inline;
+            }
+            #no1{
+                background-color: black;
+                color: white;
+                padding: 10px;
+                text-align: center;
+            }
+            p{
+                font-size: 25px;
+                color: white;
+                text-align: justify;
+                padding: 10px;
+                margin: 10px;
+                font-family: 'Praise', cursive;
+                background-color: slateblue;
+            }
+            #no2{
+                float: left;
+            }
+            #no3{
+                float: right;
+            }
+            h2{
+                font-size: 40px;
+                color: oldlace;
+                background-color: royalblue;
+                font-family: 'Praise', cursive;
+            }
+            img{
+                height: 250px;
+                padding: 10px;
+            }
+            span{
+                color: seashell;
+
+            }
+        </style>
+    </head>
+    <body style="background-color: skyblue;">
+        <h1 id="stick" >Hotel  Finder🔍</h1>
+        <nav id="no1">
+            <li>Home |</li>
+            <li>Book |</li>
+            <li>Contact |</li>
+        </nav>
+        
+        <h2>Emirates Palace</h2>
+        <p><img id="no2" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/emirates-palace-luxurious-hotels.jpg?w=1000">
+            When it comes to luxurious hotels, this one is at the top. Costing approximately $3 billion to build, Emirates Palace has
+             394 grand rooms and suites, 40 meeting and conference rooms, a white sand beach, a myriad of pools and fountains, two
+              sumptuous spas, marble imported from 13 different countries and over 1,000 Swarovski crystal chandeliers.</p>
+
+              <h2>New York Palace</h2>
+        <p><img id="no3" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/plaza-new-york-luxurious-hotels.jpg?w=1000">
+            Though the Big Apple has many legendary and swanky hotels, The Plaza is often the top choice for visiting VIPs. The Royal Three
+             Bedroom Suite is styled in the most opulent of old world charm with a formal dining room for up to 12 guests, a library, a 
+             gymnasium, a grand piano, full kitchen (for personal chefs), and is serviced by its own private elevator. Butler service is also
+              included. Built in 1907.
+           </p>
+
+           <h2>Atlantis Paradise Island</h2>
+        <p><img id="no2" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/atlantis-paradise-island-luxurious-hotels.jpg?w=1000">
+            Built in tribute to the legendary lost city, Atlantis Paradise Island is a 141-acre facility touted as the premier luxury resort
+             destination in the Bahamas. It’s the resort’s Bridge Suite on the 23rd floor that really pulls out all the swanky stops. It spans
+              10 plush rooms topped by 12-ft. ceilings and full-length windows, and includes a grand piano, twin entertainment centres, a 
+              formal dining room with a 22-karat gold chandelier, plus a permanent staff of seven butlers and attendants to cater to your 
+              every whim.
+           </p><br><br><br><br><br><br>
+
+        <form style="text-align: left;background-color:steelblue;color: midnightblue;">
+            <fieldset>
+                <legend>Booking</legend>
+                <span>Name:</span>   <input type="text" name="name" required="required" placeholder="Your Name" /> <br>
+                <span>Email:</span>  <input type="email" name="Email" minlength="5" maxlength="50" placeholder="Enter your Email"><br>
+                <span>Name of Hotel:</span>  <textarea placeholder="Which Hotel would you like to book a room in" required="required"></textarea><br>
+                <span>Booking Information:</span>  <textarea placeholder="Additional Information" required="required"></textarea><br>
+              <input type="submit" value="Book Now">
+            </fieldset>
+        </form>
+    </body>
+</html>
