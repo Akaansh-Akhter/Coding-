@@ -51,27 +51,59 @@
                 height: 250px;
                 padding: 10px;
             }
-            span{
+            label{
                 color: seashell;
 
+            }
+            #no4{
+               padding-right: 97px;
+            }
+            #no5{
+               padding-right: 97px;
+            }
+            #no6{
+               padding-right: 40px;
+            }
+            #no8{
+                padding-right: 56px;
+            }
+            #no9{
+                padding-right: 23px;
+            }
+            #image{
+                height: 50px;
+            }
+            body{
+                scroll-behavior: smooth;
+            }
+            a:link{
+                color: powderblue;
+            }
+            a:active{
+                color: pink;
+            }
+            a:visited{
+                color: white;
             }
         </style>
     </head>
     <body style="background-color: skyblue;">
         <h1 id="stick" >Hotel  Finder🔍</h1>
         <nav id="no1">
-            <li>Home |</li>
-            <li>Book |</li>
-            <li>Contact |</li>
+            <li><a href="#no11">Emirates Palace |</a></li>
+            <li><a href="#no13">New York Palace |</a></li>
+            <li><a href="#no14">Atlantis Paradise Island |</a></li>
+            <li><a href="#no10">Book |</a></li>
+            <li><a href="#no12">Contact</a></li>
         </nav>
         
-        <h2>Emirates Palace</h2>
+        <h2 id="no11">Emirates Palace</h2>
         <p><img id="no2" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/emirates-palace-luxurious-hotels.jpg?w=1000">
             When it comes to luxurious hotels, this one is at the top. Costing approximately $3 billion to build, Emirates Palace has
              394 grand rooms and suites, 40 meeting and conference rooms, a white sand beach, a myriad of pools and fountains, two
               sumptuous spas, marble imported from 13 different countries and over 1,000 Swarovski crystal chandeliers.</p>
 
-              <h2>New York Palace</h2>
+              <h2 id="no13">New York Palace</h2>
         <p><img id="no3" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/plaza-new-york-luxurious-hotels.jpg?w=1000">
             Though the Big Apple has many legendary and swanky hotels, The Plaza is often the top choice for visiting VIPs. The Royal Three
              Bedroom Suite is styled in the most opulent of old world charm with a formal dining room for up to 12 guests, a library, a 
@@ -79,7 +111,7 @@
               included. Built in 1907.
            </p>
 
-           <h2>Atlantis Paradise Island</h2>
+           <h2 id="no14">Atlantis Paradise Island</h2>
         <p><img id="no2" src="https://www.readersdigest.ca/wp-content/uploads/2015/10/atlantis-paradise-island-luxurious-hotels.jpg?w=1000">
             Built in tribute to the legendary lost city, Atlantis Paradise Island is a 141-acre facility touted as the premier luxury resort
              destination in the Bahamas. It’s the resort’s Bridge Suite on the 23rd floor that really pulls out all the swanky stops. It spans
@@ -88,15 +120,32 @@
               every whim.
            </p><br><br><br><br><br><br>
 
-        <form style="text-align: left;background-color:steelblue;color: midnightblue;">
+        <form id="no10" style="text-align: left;background-color:steelblue;color: midnightblue;width: 400px;">
             <fieldset>
                 <legend>Booking</legend>
-                <span>Name:</span>   <input type="text" name="name" required="required" placeholder="Your Name" /> <br>
-                <span>Email:</span>  <input type="email" name="Email" minlength="5" maxlength="50" placeholder="Enter your Email"><br>
-                <span>Name of Hotel:</span>  <textarea placeholder="Which Hotel would you like to book a room in" required="required"></textarea><br>
-                <span>Booking Information:</span>  <textarea placeholder="Additional Information" required="required"></textarea><br>
+                <label id="no4">Name:</label>   <input type="text" name="name" required="required" placeholder="Your Name" /> <br>
+                <label id="no5">Email:</label>  <input type="email" name="Email" minlength="5" maxlength="50" placeholder="Enter your Email"><br>
+                <label id="no8">Room Cost:</label> <input type="radio" name="Luxury">Luxury
+                                          <input type="radio" name="Luxury">Deluxe
+                                          <input type="radio" name="Luxury">Normal<br>
+                <label id="no9">Room Facillities:</label> <input type="radio" name="AC">AC
+                                          <input type="radio" name="Wifi">Wifi
+                                          <input type="radio" name="AC">Fan<br>
+                <label id="no6">Name of Hotel:</label>  <textarea placeholder="Which Hotel would you like to book a room in" required="required"></textarea><br>
+                <label id="no7">Booking Information:</label>  <textarea placeholder="Additional Information" required="required"></textarea><br>
               <input type="submit" value="Book Now">
             </fieldset>
         </form>
+        <div id="no12" style="display: flex;background-color: navy;margin: 10px;">
+        <div><h4 style="color: white;  font-family: 'Praise', cursive;font-size: 25px;padding-left: 10px;">Contact Us On</h4></div>
+            <div style="margin: 12px;">
+            <img id="image" src="https://th.bing.com/th/id/OIP.7My9Mg_dkUAAdiVjdbugkgHaHP?pid=ImgDet&rs=1">
+            <img id="image" src="https://th.bing.com/th/id/R.6c4fa60abc8df6911c1f9de4acdeda62?rik=s19o7J4namx0OA&riu=http%3a%2f%2fworkingwithdog.com%2fwp-content%2fuploads%2f2016%2f05%2fnew_instagram_logo.jpg&ehk=OfDnZJ2RNDAaAw4fUmkpDiAXQIOqdP3MRkS4jlcMr1Y%3d&risl=&pid=ImgRaw&r=0">
+            <img id="image" src="https://th.bing.com/th/id/R.8e3c4ef14e3c23c0ad0dcc95493bd06d?rik=bVHzU4wlQXNjKA&pid=ImgRaw&r=0">
+            <img id="image" src="https://th.bing.com/th/id/R.9a3a06f78cc0a8d79fce59e2de6da146?rik=nLAu3Z%2f0QUb%2fVw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fiynque%2fios7-style%2f1024%2fTwitter-icon.png&ehk=eD3Hc5yQAyP3AKPJoYHB8yeWKwKdaVAswR5kxmodex4%3d&risl=&pid=ImgRaw&r=0">
+            <img id="image" src="https://th.bing.com/th/id/OIP.AI26SenBR2y56ZXm0HCqOwHaHa?pid=ImgDet&rs=1">
+        </div>
+        </div>
+
     </body>
 </html>
