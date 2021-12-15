@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="Major Project.CSS">
+        <link rel="shortcut icon" type="image/x-icon" href="https://th.bing.com/th/id/OIP.79SQDGj4-VIc8RgOkTDeugHaHa?w=202&h=202&c=7&r=0&o=5&pid=1.7">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@1,300&family=Noto+Serif:ital,wght@1,700&family=Playfair+Display:wght@500&family=Praise&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Merriweather:ital,wght@1,300&family=Noto+Serif:ital,wght@1,700&family=Playfair+Display:wght@500&family=Praise&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Spiderman No Way Home</h1>
+        <nav style="text-align: center;">
+            <li><a href="Widow.html" target="_blank">Black Widow</a>  |</li>
+            <li><a href="Spiderman.html"  target="_blank">Spiderman</a>  |</li>
+            <li><a href="Venom.html" target="_blank">Venom</a>  |</li>
+            <li><a href="Tom_Jerry.html" target="_blank">Tom and Jerry</a>  |</li>
+            <li><a href="Major Project.html" target="_blank">Back to homepage</a>  |</li>
+        </nav>
+        <div id="#flex-container">
+          <center>
+            <img id="padding" src="https://reelsrated.com/wp-content/uploads/2021/04/SpiderManNo-Way-Home-1536x864.jpg" height="600px"width="800px">   
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.094762797507!2d55.43253271543285!3d25.23373303640861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f609cb2d28eff%3A0xfc8947d69cc3389f!2sCinema%20City!5e0!3m2!1sen!2sae!4v1639575778154!5m2!1sen!2sae" width="700" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </center> 
+        </div>
+<h2>What is this movie about?</h2>
+          <p>
+            Spider-Man: No Way Home is a 2021 American superhero film based on the Marvel Comics character Spider-Man co-produced by 
+            Columbia Pictures and Marvel Studios and distributed by Sony Pictures Releasing. It is the sequel to Spider-Man: Homecoming 
+            (2017) and Spider-Man: Far From Home (2019), and is the 27th film in the Marvel Cinematic Universe. The film is directed by 
+            Jon Watts, written by Chris McKenna and Erik Sommers, and stars Tom Holland as Peter Parker / Spider-Man alongside Tobey Maguire,
+             Andrew Garfield, Zendaya, Benedict Cumberbatch, Jacob Batalon, Jon Favreau and Marisa Tomei. In the film, Parker asks Dr.
+              Stephen Strange (Cumberbatch) to make his identity as Spider-Man a secret again with magic but it breaks open the multiverse 
+              and allows five supervillains from alternate realities to enter Parker's universe.
+          </p>
+          <h2 >Timings this week</h2>
+          <table>
+              <tr >
+                  <td>Sunday</td>
+                  <td>Monday</td>
+                  <td>Tuesday</td>
+                  <td>Wednesday</td>
+                  <td>Thursday</td>
+              </tr>
+              <tr>
+                  <td>1:00pm</td>
+                  <td>1:00pm</td>
+                  <td>1:00pm</td>
+                  <td>1:00pm</td>
+                  <td>1:00pm</td>
+              </tr>
+              <tr>
+                  <td>5:00pm</td>
+                  <td>5:00pm</td>
+                  <td>5:00pm</td>
+                  <td>5:00pm</td>
+                  <td>5:00pm</td>
+              </tr>
+              <tr>
+                  <td>8:00pm</td>
+                  <td>8:00pm</td>
+                  <td>8:00pm</td>
+                  <td>8:00pm</td>
+                  <td>8:00pm</td>
+              </tr>
+          </table>
+
+          <h2>Booking</h2>
+          <form style="font-size: 25px;background-color: gray;">
+              Date: <input type="radio"  name="day">Sunday
+                    <input type="radio"  name="day">Monday
+                    <input type="radio"  name="day">Tuesday
+                    <input type="radio" name="day">Wednesday
+                    <input type="radio" name="day">Thursday<br>
+  
+              Time: <input type="radio"  name="time">1:00pm
+                    <input type="radio"  name="time">5:00pm
+                    <input type="radio"  name="time">8:00pm
+          </form> 
+          <h2>Weekend Booking</h2>
+          <form>
+              Friday & Saturday:  <input type="text" name="" id="n" placeholder="1:00pm 2:00pm 5:00pm 9:00pm"/>
+              <button onclick="time_now();" >Click</button>
+            
+          </form>
+          <script type="text/javascript">
+              function time_now(){
+                  if (document.getElementById("n").value == "1:00pm" ) {
+                      alert("Your movie has been booked for 1:00pm")
+                  }else{
+                      
+                  }
+                  
+                  if (document.getElementById("n").value == "2:00pm") {
+                      alert("Your movie has been booked for 2:00pm")
+                  } else {
+                      
+                  }
+                  if (document.getElementById("n").value == "5:00pm") {
+                          alert("Your movie has been booked for 5:00pm")
+                      } else {
+                          
+                      }
+  
+                  if (document.getElementById("n").value == "9:00pm") {
+                              alert("Your movie has been booked for 9:00pm")
+                          } else{
+                              
+                          }
+                  
+              }
+          </script>
+          <h2>Trailer</h2>
+          <iframe style="margin-left: 50px;" width="900" height="605" src="https://www.youtube.com/embed/JfVOs4VSpmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <h2>Reviews</h2>
+          <p>
+            Tom Holland first made his debut as the teenaged web-slinger in 2016's Captain America: Civil War, before his first stand
+            -alone movie, 2017's Spider-Man: Homecoming, which earned an impressive 92% on Rotten Tomatoes from 394 reviews.  
+            The 25-year-old actor returned as Peter Parker/Spider-Man in 2019's Spider-Man: Far From Home, which earned a 90% RT
+             score from 451 reviews, but the first wave of Spider-Man: No Way Home reviews on Rotten Tomatoes are the best yet at
+              97% out of the first 75 reviews.
+          </p>
+    </body>
+</html>
